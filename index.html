@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ultimate Archery 3D</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: #000; }
+    canvas { display: block; }
+    #ui {
+      position: absolute;
+      top: 10px; left: 10px;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 16px;
+    }
+    #power-bar {
+      width: 200px;
+      height: 20px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    #power-fill {
+      width: 0%;
+      height: 100%;
+      background: limegreen;
+      transition: width 0.1s linear;
+    }
+  </style>
+</head>
+<body>
+  <div id="ui">
+    <div>Score: <span id="score">0</span> | Combo: <span id="combo">x1</span></div>
+    <div id="power-bar"><div id="power-fill"></div></div>
+  </div>
+
+  <script src="three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
