@@ -54,8 +54,8 @@ const scoreEl = document.getElementById("score");
 const comboEl = document.getElementById("combo");
 
 // ==================== SOUND ==================== //
-const shootSound = new Audio("sounds/shoot.mp3");
-const hitSound = new Audio("sounds/hit.mp3");
+const shootSound = new Audio("sounds/shoot.wav");
+const hitSound = new Audio("sounds/hit.wav");
 
 // ==================== SHOOT FUNCTION ==================== //
 function shootArrow() {
